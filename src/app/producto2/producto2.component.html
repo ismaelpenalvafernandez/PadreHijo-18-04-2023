@@ -1,0 +1,13 @@
+<label for="nombre">IdPedido: </label>
+<input type="number" id="idProducto" name="idProducto" [(ngModel)]="pedido.idpedido"><br>
+<label for="nombre">IdCliente: </label>
+<input id="number" id="nombre" name="nombre" [(ngModel)]="pedido.idcliente"><br>
+<label for="b">Nombre: </label>
+<input type="text" id="cantidad" name="cantidad" [(ngModel)]="pedido.nombre"><br>
+<label for="precio">Total: </label>
+<input type="number"id="precio" name="precio"[(ngModel)]="pedido.total"><br>
+<label for="precio">Importe: </label>
+<input type="number"id="precio" name="precio"[(ngModel)]="pedido.importe"><br>
+
+
+<input type="submit" value="subir" (click)="anadir()">

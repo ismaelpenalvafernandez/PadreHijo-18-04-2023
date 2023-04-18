@@ -1,0 +1,19 @@
+<label for="nombre">IdProducto: </label>
+<input type="number" id="idProducto" name="idProducto" [(ngModel)]="producto.idproducto"><br>
+<label for="nombre">Nombre: </label>
+<input id="string" id="nombre" name="nombre" [(ngModel)]="producto.nombre"><br>
+<label for="b">Cantidad: </label>
+<input type="number" id="cantidad" name="cantidad" [(ngModel)]="producto.cantidad"><br>
+<label for="precio">Precio: </label>
+<input type="number"id="precio" name="precio"[(ngModel)]="producto.precio"><br>
+<select name="" id="" [(ngModel)]="tp">
+
+    <option value="alimentos" >ALIMENTOS</option>
+    <option value="perecederos" >ALIMENTOS PERECEDEROS</option>
+    <option value="limpieza" >LIMPIEZA</option>
+    
+    
+    </select>
+
+<input type="submit" value="subir" (click)="anadir()">
+<app-producto [producto]="productos"></app-producto>

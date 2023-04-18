@@ -1,0 +1,18 @@
+<app-producto2 (enviardatos)="anadir($event)"></app-producto2>
+<p>Tienda</p>
+ <table>
+    <tr>
+        <td>IdPedido</td>
+        <td>IdCliente</td>
+        <td>Nombre</td>
+        <td>Total</td>
+        <td>Importe</td>
+    </tr>
+    <tr *ngFor="let pedido of pedidos">
+        <td>{{pedido.idpedido}}</td>
+        <td>{{pedido.idcliente}}</td>
+        <td>{{pedido.nombre}}</td>
+        <td>{{pedido.total}}</td>
+        <td>{{pedido.importe}}</td>
+    </tr>
+</table>
